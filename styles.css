@@ -1,3 +1,14 @@
 html{
     background-color: aqua;
 }
+
+div{
+    border-color: black solid 4px;
+}
+
+#character_sheet{
+    background-color: white;
+    height: 1000;
+    width: 600;
+    position: absolute;
+}
