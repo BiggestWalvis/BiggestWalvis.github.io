@@ -10,8 +10,7 @@ html{
     margin: 0px;
 }
 .organizer{
-    border-bottom: 1px solid red;
-    border-left: 1px solid red;
+    border-bottom: 4px solid black;
 }
 .top-container{
     display: flex;
@@ -98,4 +97,121 @@ html{
 }
 #traits{
     width:200px;
+}html{
+    background-color: aqua;
+}
+.container{
+    display: absolute;
+    width: 600px;
+    height: 800px;
+    border: 2px solid black;
+    padding: 10px 10px;
+    margin: 0px;
+    background-color: white;
+}
+.top-container{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 590px;
+    height: 100px;
+    float: left;
+}
+.middle{
+    position: relative;
+    top: 10px;
+    left: 0px;
+    height: 450px;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+#ability-scores{
+    width: 70px;
+    margin-right: 10px;
+    background-color: ghostwhite
+}
+#skills-saves-prof{
+    width: 140px;
+    margin-right: 10px;
+}
+#current_status-attacks{
+    width: 150px;
+    margin-right: 10px;
+    background-color: ghostwhite
+}
+#personality_and_features{
+    width: 200px;
+}
+.footer{
+    display: flex;
+    position: relative;
+    top: 20px;
+    height: 210px;
+    width: 590px;
+    float: left;
+}
+#main-box{
+    float: left;
+    padding: 0px;
+}
+#sub-box{
+    padding: 0px;
+    margin: 0px;
+}
+#character_name{
+    width: 180px;
+    height: 80px;
+    background-color: ghostwhite
+}
+#character_description{
+    width: 400px;
+    height: 100px;
+    background-color: ghostwhite
+}
+#stat_blocks{
+    height: 450px;
+}
+#inspiration{
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: ghostwhite;
+}
+#proficiency{
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: ghostwhite;
+}
+#skills{
+    height: 370px;
+    background-color: ghostwhite;
+}
+#current_status{
+    height: 450px;
+}
+#personality_traits{
+    height: 190px;
+    margin-bottom: 10px;
+    background-color: ghostwhite;
+}
+#features{
+    height:250px;
+    margin: 0px;
+    background-color: ghostwhite;
+}
+#pp-other_proficiencies{
+    width:190px;
+    margin-right: 10px;
+    background-color: ghostwhite;
+}
+#equipment{
+    width:190px;
+    margin-right: 10px;
+    background-color: ghostwhite;
+}
+#traits{
+    width:200px;
+    background-color: ghostwhite;
 }
