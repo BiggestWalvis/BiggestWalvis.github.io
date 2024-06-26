@@ -1,14 +1,101 @@
 html{
     background-color: aqua;
 }
-
-div{
-    border-color: black solid 4px;
+.container{
+    display: absolute;
+    width: 600px;
+    height: 800px;
+    border: 2px solid black;
+    padding: 10px 10px;
+    margin: 0px;
 }
-
-#character_sheet{
-    background-color: white;
-    height: 1000;
-    width: 600;
-    position: absolute;
+.organizer{
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
+}
+.top-container{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 590px;
+    height: 100px;
+    float: left;
+}
+.middle{
+    position: relative;
+    top: 10px;
+    left: 0px;
+    height: 450px;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+#ability-scores{
+    width: 80px   
+}
+#skills-saves-prof{
+    width: 150px
+}
+#current_status-attacks{
+    width: 160px
+}
+#personality_and_features{
+    width: 200px
+}
+.footer{
+    display: flex;
+    position: relative;
+    top: 20px;
+    height: 210px;
+    width: 590px;
+    float: left;
+}
+#main-box{
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+#sub-box{
+    padding: 0px;
+    margin: 0px;
+}
+#character_name{
+    width: 180px;
+    height: 80px;
+}
+#character_description{
+    width: 400px;
+    height: 100px;
+}
+#stat_blocks{
+    height: 450px;
+}
+#inspiration{
+    height: 30px;
+}
+#proficiency{
+    height: 30px;
+}
+#skills{
+    height: 390px;
+}
+#current_status{
+    height: 450px;
+}
+#personality{
+    height: 200px;
+}
+#features{
+    height:250px;
+}
+#pp-other_proficiencies{
+    width:200px;
+}
+#equipment{
+    width:200px;
+}
+#traits{
+    width:200px;
 }
