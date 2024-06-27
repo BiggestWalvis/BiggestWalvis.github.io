@@ -61,11 +61,14 @@ input{
 
 /*character decription formating*/
 #character_description{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 480px;
     height: 100px;
 }
 .input-spacing{
-    width: 30%;
+    width: 33%;
 }
 
 /*ability-scores formating*/
