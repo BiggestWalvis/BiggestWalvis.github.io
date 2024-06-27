@@ -1,16 +1,29 @@
 html{
     background-color: aqua;
+    font-size: 14px;
+}
+fieldset{
+    margin: 0px;
+    padding: 0px;
+    background-color: ghostwhite;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+label{
+    margin: 0px;
+    padding: 0px;
+}
+input{
+    margin: 0px;
+    padding: 0px;
 }
 .container{
     display: absolute;
-    width: 600px;
-    height: 800px;
+    width: 700px;
+    height: 1000px;
     border: 2px solid black;
     padding: 10px 10px;
     margin: 0px;
-}
-.organizer{
-    border-bottom: 4px solid black;
 }
 .top-container{
     display: flex;
@@ -30,18 +43,6 @@ html{
     float: left;
     padding: 0px;
     margin: 0px;
-}
-#ability-scores{
-    width: 80px   
-}
-#skills-saves-prof{
-    width: 150px
-}
-#current_status-attacks{
-    width: 160px
-}
-#personality_and_features{
-    width: 200px
 }
 .footer{
     display: flex;
@@ -51,167 +52,87 @@ html{
     width: 590px;
     float: left;
 }
-#main-box{
-    float: left;
-    padding: 0px;
-    margin: 0px;
-}
-#sub-box{
-    padding: 0px;
-    margin: 0px;
-}
-#character_name{
-    width: 180px;
-    height: 80px;
-}
-#character_description{
-    width: 400px;
-    height: 100px;
-}
-#stat_blocks{
-    height: 450px;
-}
-#inspiration{
-    height: 30px;
-}
-#proficiency{
-    height: 30px;
-}
-#skills{
-    height: 390px;
-}
-#current_status{
-    height: 450px;
-}
-#personality{
-    height: 200px;
-}
-#features{
-    height:250px;
-}
-#pp-other_proficiencies{
-    width:200px;
-}
-#equipment{
-    width:200px;
-}
-#traits{
-    width:200px;
-}html{
-    background-color: aqua;
-}
-.container{
-    display: absolute;
-    width: 600px;
-    height: 800px;
-    border: 2px solid black;
-    padding: 10px 10px;
-    margin: 0px;
-    background-color: white;
-}
-.top-container{
-    display: flex;
-    gap: 10px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 590px;
-    height: 100px;
-    float: left;
-}
-.middle{
-    position: relative;
-    top: 10px;
-    left: 0px;
-    height: 450px;
-    float: left;
-    padding: 0px;
-    margin: 0px;
-}
-#ability-scores{
-    width: 70px;
-    margin-right: 10px;
-    background-color: ghostwhite
-}
-#skills-saves-prof{
-    width: 140px;
-    margin-right: 10px;
-}
-#current_status-attacks{
-    width: 150px;
-    margin-right: 10px;
-    background-color: ghostwhite
-}
-#personality_and_features{
+
+/*character name formating*/
+#character_name-field{
     width: 200px;
+    height: 80px
 }
-.footer{
-    display: flex;
-    position: relative;
-    top: 20px;
-    height: 210px;
-    width: 590px;
-    float: left;
-}
-#main-box{
-    float: left;
-    padding: 0px;
-}
-#sub-box{
-    padding: 0px;
-    margin: 0px;
-}
-#character_name{
-    width: 180px;
-    height: 80px;
-    background-color: ghostwhite
-}
+
+/*character decription formating*/
 #character_description{
-    width: 400px;
+    width: 480px;
     height: 100px;
-    background-color: ghostwhite
 }
-#stat_blocks{
-    height: 450px;
+.input-spacing{
+    width: 30%;
 }
-#inspiration{
-    height: 30px;
-    margin-bottom: 10px;
-    background-color: ghostwhite;
+
+/*ability-scores formating*/
+#ability-scores{
+    width: 80px;
+    height: 530px
 }
+.main-ability-scores-spacing{
+    width: 60px;
+}
+.sub-ability-scores-spacing{
+    width: 60px;
+}
+
+
+/*inpiration, profficiency, saves, and skills formating */
+#skills-saves-prof{
+    width: 170px;
+    height: 530px
+}
+
 #proficiency{
     height: 30px;
-    margin-bottom: 10px;
-    background-color: ghostwhite;
+    width: 50%;
 }
-#skills{
-    height: 370px;
-    background-color: ghostwhite;
+
+#saving_throw_box-label{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
 }
-#current_status{
+
+#skills-label{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*current status formating*/
+#current_status-attacks{
+    width: 200px;
+    height: 530px
+}
+ #current_status{
     height: 450px;
+}   
+
+
+/*Personality and Features formating*/
+#personality_and_features{
+    width: 235px;
+    height: 530px
 }
-#personality_traits{
-    height: 190px;
-    margin-bottom: 10px;
-    background-color: ghostwhite;
-}
+
 #features{
     height:250px;
-    margin: 0px;
-    background-color: ghostwhite;
 }
+
+/*Passive Perception and equipment and other*/
 #pp-other_proficiencies{
-    width:190px;
-    margin-right: 10px;
-    background-color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    width:270px;
 }
 #equipment{
-    width:190px;
-    margin-right: 10px;
-    background-color: ghostwhite;
+    width:155px;
 }
-#traits{
-    width:200px;
-    background-color: ghostwhite;
+#traits-fieldset{
+    width:255px;
 }
