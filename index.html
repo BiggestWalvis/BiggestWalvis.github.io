@@ -8,89 +8,156 @@
     </head>
     <body>
         <div id="character_sheet" class="container">
-            <div id="heading" class="top-container organizer">
-                <div id="character_name" class="main-box">character_name</div>
-                <div id="character_description" class="main-box">character_description
-                    <div id="class&level" class="sub-box"></div>
-                    <div id="race" class="sub-box"></div>
-                    <div id="background" class="sub-box"></div>
-                    <div id="alignment" class="sub-box"></div>
-                    <div id="player_name" class="sub-box"></div>
-                    <div id="experience_points" class="sub-box"></div>
-                </div>
-            </div>
-            <div id="ability-scores" class="middle organizer">
-                <div id="stat_blocks" class="main-box">stat_blocks
-                    <div id="strength" class="sub-box"></div>
-                    <div id="dexterity" class="sub-box"></div>
-                    <div id="constitution" class="sub-box"></div>
-                    <div id="intelligence" class="sub-box"></div>
-                    <div id="widsom" class="sub-box"></div>
-                    <div id="charisma" class="sub-box"></div>
-                </div>
-            </div>
-            <div id="skills-saves-prof" class="middle organizer">
-                <div id="inspiration" class="main-box">inspiration</div>
-                <div id="proficiency" class="main-box">proficiency</div>
-                <div id="saving_throw_box" class="main-box">
-                    <div id="strength_saving" class="sub-box"></div>
-                    <div id="dexterity_saving" class="sub-box"></div>
-                    <div id="constitution_saving" class="sub-box"></div>
-                    <div id="intelligence_saving" class="sub-box"></div>
-                    <div id="widsom_saving" class="sub-box"></div>
-                    <div id="charisma_saving" class="sub-box"></div>
-                </div>
-                <div id="skills" class="main-box">skills
-                    <div id="acrobatics" class="sub-box"></div>
-                    <div id="animal_handling" class="sub-box"></div>
-                    <div id="arcana" class="sub-box"></div>
-                    <div id="athletics" class="sub-box"></div>
-                    <div id="deception" class="sub-box"></div>
-                    <div id="history" class="sub-box"></div>
-                    <div id="insight" class="sub-box"></div>
-                    <div id="intimidation" class="sub-box"></div>
-                    <div id="investigation" class="sub-box"></div>
-                    <div id="medicine" class="sub-box"></div>
-                    <div id="nature" class="sub-box"></div>
-                    <div id="perception" class="sub-box"></div>
-                    <div id="performance" class="sub-box"></div>
-                    <div id="persuasion" class="sub-box"></div>
-                    <div id="religion" class="sub-box"></div>
-                    <div id="slight_of_hand" class="sub-box"></div>
-                    <div id="stealth" class="sub-box"></div>
-                    <div id="survival" class="sub-box"></div>
-                </div>
-            </div>
-            <div id="current_status-attacks" class="middle organizer">
-                <div id="current_status" class="main-box">current_status
-                    <div id="armor_class" class="sub-box"></div>
-                    <div id="initiative" class="sub-box"></div>
-                    <div id="speed" class="sub-box"></div>
-                    <div id="current_hp" class="sub-box"></div>
-                    <div id="temp_hp" class="sub-box"></div>
-                    <div id="hit_dice" class="sub-box"></div>
-                    <div id="death_saves" class="sub-box"></div>
-                    <div id="attacks_spellcasting" class="sub-box"></div>
-                    <div id="equipment" class="sub-box"></div>
-                </div>
-            </div>
-            <div id="personality_and_features" class="middle organizer">
-                <div id="personality_traits" class="main-box">personality_traits
-                    <div id="personality" class="sub-box"></div>
-                    <div id="ideals" class="sub-box"></div>
-                    <div id="bonds" class="sub-box"></div>
-                    <div id="flaws" class="sub-box"></div>
-                </div>
-                <div id="features" class="main-box">features</div>
-            </div>
-            <div id="perception-equipment-other" class="footer organizer">
-                <div id="pp-other_proficiencies" class="main-box">PP and other
-                    <div id="passive-perception" class="sub-box"></div>
-                    <div id="other_proficiencies" class="sub-box"></div>
-                </div>
-                <div id="equipment" class="main-box">equipment</div>
-                <div id="traits" class="main-box">traits</div>
-            </div>
+
+            <fieldset id="heading" class="top-container organizer">
+                <fieldset id="character_name-field" class="character_name-class">
+                    <label id="character_name" class="main-box" for="name">Character Name<input id="name" type="text" placeholder="John Dnd" class="input-spacing"/></label>
+                </fieldset>
+                <fieldset id="character_description" class="main-box">
+                    <label id="class&level" class="sub-box" for="class">Class & Level<input id="class" type="text" placeholder="Class and Level" class="input-spacing"/></label>
+                    <label id="race-label" class="sub-box" for="race">Race<input id="race" type="text" placeholder="Race" class="input-spacing"/></label>
+                    <label id="background-label" class="sub-box" for="background">Background<input id="background" type="text" placeholder="Background" class="input-spacing"/></label>
+                    <label id="alignment-label" class="sub-box" for="alignment">Alignment<input id="alignment" type="text" placeholder="Alignment" class="input-spacing"/></label>
+                    <label id="player_name-label" class="sub-box" for="player_name">Player Name<input id="player_name" type="text" placeholder="Class and Level" class="input-spacing"/></label>
+                    <label id="experience_points-label" class="sub-box" for="experience_points">Experience Points<input id="experience_points" type="text" placeholder="Experience" class="input-spacing"/></label>
+                </fieldset>
+            </fieldset>
+
+            <fieldset id="ability-scores" class="middle organizer">
+                <fieldset id="strength-field" class="strength-class">
+                    <label id="strength-main-label" class="sub-box" for="strength-main">Strength<input id="strength-main" type="number" class="main-ability-scores-spacing"/></label>
+                    <label id="strength-mod-label"class="sub-box" for="strength-mod"><input id="strength-mod" type="number" class="sub-ability-scores-spacing"/></label>
+                </fieldset>
+                <fieldset id="dexterity-field" class="dexterity-class">
+                    <label id="dexterity-main-label" class="sub-box" for="dexterity-main">Dexterity<input id="dexterity-main" type="number" class="main-ability-scores-spacing"/></label>
+                    <label id="dexterity-mod-label"class="sub-box" for="dexterity-mod"><input id="dexterity-mod" type="number" class="sub-ability-scores-spacing"/></label>
+                </fieldset>
+                <fieldset id="constitution-field" class="constitution-class">
+                    <label id="constitution-main-label" class="sub-box" for="constitution-main">Constitution<input id="constitution-main" type="number" class="main-ability-scores-spacing"/></label>
+                    <label id="constitution-mod-label"class="sub-box" for="constitution-mod"><input id="constitution-mod" type="number" class="sub-ability-scores-spacing"/></label>
+                </fieldset>
+                <fieldset id="intelligence-field" class="intelligence-class">
+                    <label id="intelligence-main-label" class="sub-box" for="intelligence-main">Intelligence<input id="intelligence-main" type="number" class="main-ability-scores-spacing"/></label>
+                    <label id="intelligence-mod-label"class="sub-box" for="intelligence-mod"><input id="intelligence-mod" type="number" class="sub-ability-scores-spacing"/></label>
+                </fieldset>
+                <fieldset id="wisdom-field" class="wisdom-class">
+                    <label id="wisdom-main-label" class="sub-box" for="wisdom-main">Wisdom<input id="wisdom-main" type="number" class="main-ability-scores-spacing"/></label>
+                    <label id="wisdom-mod-label"class="sub-box" for="wisdom-mod"><input id="wisdom-mod" type="number" class="sub-ability-scores-spacing"/></label>
+                </fieldset>
+                <fieldset id="charisma-field" class="charisma-class">
+                    <label id="charisma-main-label" class="sub-box" for="charisma-main">Charisma<input id="charisma-main" type="number" class="main-ability-scores-spacing"/></label>
+                    <label id="charisma-mod-label"class="sub-box" for="charisma-mod"><input id="charisma-mod" type="number" class="sub-ability-scores-spacing"/></label>
+                </fieldset>
+            </fieldset>
+
+            <fieldset id="skills-saves-prof" class="middle organizer">
+                <fieldset id="inspiration-field" class="inspiration-class">
+                    <label id="inspiration-label" class="main-box" for="inspiration"><input id="inspiration" type="checkbox" class="inspiration-spacing"/>Inspiration</label>
+                </fieldset>
+                <fieldset id="proficiency-field" class="proficiency-class">
+                    <label id="proficiency-label" class="main-box" for="proficiency"><input id="proficiency" type="number" class="proficiency-spacing"/>Proficiency</label>
+                </fieldset>
+                <fieldset id="saving_throw_box-label" class="main-box">
+                    <label id="strength_saving-label" class="sub-box" for="strength_saving"><input id="strength_saving" type="checkbox" class="saving-throw-spacing"/>__Strength</label>
+                    <label id="dexterity_saving-label" class="sub-box" for="dexterity_saving"><input id="dexterity_saving" type="checkbox" class="saving-throw-spacing"/>__Dexterity</label>
+                    <label id="constitution_saving-label" class="sub-box" for="constitution_saving"><input id="constitution_saving" type="checkbox" class="saving-throw-spacing"/>__Constitution</label>
+                    <label id="intelligence_saving-label" class="sub-box" for="intelligence_saving"><input id="intelligence_saving" type="checkbox" class="saving-throw-spacing"/>__Intelligence</label>
+                    <label id="widsom_saving-label" class="sub-box" for="widsom_saving"><input id="widsom_saving" type="checkbox" class="saving-throw-spacing"/>__Widsom</label>
+                    <label id="charisma_saving-label" class="sub-box" for="charisma_saving"><input id="charisma_saving" type="checkbox" class="saving-throw-spacing"/>__Charisma</label>
+                Saving Throws
+                </fieldset>
+
+                <fieldset id="skills-label" class="main-box">
+                    <label id="acrobatics-label" class="sub-box" for="acrobatics"><input id="acrobatics" type="checkbox" class="skill-spacing"/>__Acrobatics (Dex)</label>
+                    <label id="animal_handling-label" class="sub-box" for="animal_handling"><input id="animal_handling" type="checkbox" class="skill-spacing"/>__Animal Handling (Wis)</label>
+                    <label id="arcana-label" class="sub-box" for="arcana"><input id="arcana" type="checkbox" class="skill-spacing"/>__Arcana(Int)</label>
+                    <label id="athletics-label" class="sub-box" for="athletics"><input id="athletics" type="checkbox" class="skill-spacing"/>__Athletics(Str)</label>
+                    <label id="deception-label" class="sub-box" for="deception"><input id="deception" type="checkbox" class="skill-spacing"/>__Deception(Cha)</label>
+                    <label id="history-label" class="sub-box" for="history"><input id="history" type="checkbox" class="skill-spacing"/>__History(Int)</label>
+                    <label id="insight-label" class="sub-box" for="insight"><input id="insight" type="checkbox" class="skill-spacing"/>__Insight(Wis)</label>
+                    <label id="intimidation-label" class="sub-box" for="intimidation"><input id="intimidation" type="checkbox" class="skill-spacing"/>__Intimidation(Cha)</label>
+                    <label id="investigation-label" class="sub-box" for="investigation"><input id="investigation" type="checkbox" class="skill-spacing"/>__Investigation(Int)</label>
+                    <label id="medicine-label" class="sub-box" for="medicine"><input id="medicine" type="checkbox" class="skill-spacing"/>__Medicine(Wis)</label>
+                    <label id="nature-label" class="sub-box" for="nature"><input id="nature" type="checkbox" class="skill-spacing"/>__Nature(Int)</label>
+                    <label id="perception-label" class="sub-box" for="perception"><input id="perception" type="checkbox" class="skill-spacing"/>__Perception(Wis)</label>
+                    <label id="performance-label" class="sub-box" for="performance"><input id="performance" type="checkbox" class="skill-spacing"/>__Performance(Cha)</label>
+                    <label id="persuasion-label" class="sub-box" for="persuasion"><input id="persuasion" type="checkbox" class="skill-spacing"/>__Persuasion(Cha)</label>
+                    <label id="religion-label" class="sub-box" for="religion"><input id="religion" type="checkbox" class="skill-spacing"/>__Religion(Int)</label>
+                    <label id="slight_of_hand-label" class="sub-box" for="slight_of_hand"><input id="slight_of_hand" type="checkbox" class="skill-spacing"/>__Slight of Hand(Dex)</label>
+                    <label id="stealth-label" class="sub-box" for="stealth"><input id="stealth" type="checkbox" class="skill-spacing"/>__Stealth(Dex)</label>
+                    <label id="survival-label" class="sub-box" for="survival"><input id="survival" type="checkbox" class="skill-spacing"/>__Survival(Wis)</label>
+                Skills
+                </fieldset>
+            </fieldset>
+
+            <fieldset id="current_status-attacks" class="middle organizer">
+                <fieldset id="AC&initiative&speed-field" class="AC&initiative&speed-class"></fieldset>
+                    <label id="armor_class-label" class="sub-box" for="armor_class"><input id="armor_class" type="number" class="armor-spacing"/>Armor</label>
+                    <label id="initiative-label" class="sub-box" for="initiative"><input id="initiative" type="number" class="initiative-spacing"/>Initiative</label>
+                    <label id="speed-label" class="sub-box" for="speed"><input id="speed" type="number" class="speed-spacing"/>Speed</label>
+                </fieldset>
+
+                <fieldset id="current_hp-field" class="current_hp-class">
+                    <label id="current_hp-label" class="sub-box" for="current_hp"><input id="current_hp" type="number" class="current_hp-spacing"/>Current Hitpoint</label>
+                </fieldset>
+
+                <fieldset id="temp_hp-field" class="temp_hp-class">
+                    <label id="temp_hp-label" class="sub-box" for="temp_hp"><input id="temp_hp" type="number" class="temp_hp-spacing"/>Temporary Hitpoints</label>
+                </fieldset>
+
+                <fieldset id="hit_dice&death_saves-field" class="hit_dice&death_saves-class">
+                    <fieldset id="hit_dice-field" class="hit_dice-class">
+                        <label id="hit_dice-label" class="sub-box" for="hit_dice"><input id="hit_dice" type="number" class="hit_dice-spacing"/>Hit Dice</label>
+                    </fieldset>
+
+                    <fieldset id="death_saves-field" class="death_saves-class">
+                        <label id="death_saves-label" class="sub-box">
+                            <label id="sucess-label" class="sub-box" for="sucess">Sucess
+                                <input id="sucess" type="button" class="death_saves-spacing"/>
+                                <input id="sucess" type="button" class="death_saves-spacing"/>
+                                <input id="sucess" type="button" class="death_saves-spacing"/>
+                            </label>
+                            <label id="failure-label" class="sub-box" for="failure">Failure
+                                <input id="failure" type="button" class="death_saves-spacing"/>
+                                <input id="failure" type="button" class="death_saves-spacing"/>
+                                <input id="failure" type="button" class="death_saves-spacing"/>
+                            </label>
+                            Death Saves
+                        </label>    
+                    </fieldset>  
+                </fieldset>
+
+                <fieldset id="attacks_spellcasting-field" class="attacks_spellcasting-class">
+                    <label id="attacks_spellcasting-label" class="sub-box" for="attacks_spellcasting"><input id="attacks_spellcasting" type="text" class="attacks_spellcasting-spacing"/>Attacks & Spellcasting</label>
+                </fieldset>
+
+            </fieldset>
+
+            <fieldset id="personality_and_features" class="middle organizer">
+                <fieldset id="personality_traits" class="main-box">personality_traits
+                    <label id="personality-label" class="sub-box" for="personality"><input id="personality" type="text" class="personality-trait-spacing"/>Personality</label>
+                    <label id="ideals-label" class="sub-box" for="ideals"><input id="ideals" type="text" class="personality-trait-spacing"/>Ideals</label>
+                    <label id="bonds-label" class="sub-box" for="bonds"><input id="bonds" type="text" class="personality-trait-spacing"/>Bonds</label>
+                    <label id="flaws-label" class="sub-box" for="flaws"><input id="flaws" type="text" class="personality-trait-spacing"/>Flaws</label>
+                </fieldset>
+
+                <fieldset id="features-field" class="main-box">
+                    <label id="features-label" class="sub-box" for="features"><input id="features" type="text" class="features-spacing"/></label>
+                </fieldset>
+            </fieldset>
+
+            <fieldset id="perception-equipment-other" class="footer organizer">
+                <fieldset id="pp-other_proficiencies" class="main-box">
+                    <label id="passive-perception-label" class="sub-box" for="passive-perception"><input id="passive-perception" type="number" class="PP-spacing"/>Passibe Perception</label>
+                    <label id="other_proficiencies-label" class="sub-box" for="other_proficiencies"><input id="other_proficiencies" type="number" class="other_proficiencies-spacing"/>Other Proficiencies</label>
+                </fieldset>
+                <fieldset id="equipment-fieldset" class="main-box">
+                    <label id="equipment-label" class="sub-box" for="equipment"><input id="equipment" type="text" class="equipment-spacing"/>Equipment</label>
+                </fieldset>
+                <fieldset id="traits-fieldset" class="main-box">
+                    <label id="traits-label" class="main-box" for="traits"><input id="equipment" type="text" class="traits-spacing"/>Traits</label>
+                </fieldset>    
+            </fieldset>
         </div>
 
         <script src="./script.js"></script>  
