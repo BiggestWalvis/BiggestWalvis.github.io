@@ -37,37 +37,39 @@
 
             <fieldset id="ability-scores" class="middle organizer">
                 <fieldset id="strength-field" class="strength-class">
-                    <label id="strength-main-label" class="sub-box" for="strength-main">Strength<input id="strength-main" type="number" class="main-ability-scores-spacing"/></label>
+                    <label id="strength-main-label" class="sub-box" for="strength-main"><input id="strength-main" type="number" class="main-ability-scores-spacing"/>Strength</label>
                     <label id="strength-mod-label"class="sub-box" for="strength-mod"><input id="strength-mod" type="number" class="sub-ability-scores-spacing"/></label>
                 </fieldset>
                 <fieldset id="dexterity-field" class="dexterity-class">
-                    <label id="dexterity-main-label" class="sub-box" for="dexterity-main">Dexterity<input id="dexterity-main" type="number" class="main-ability-scores-spacing"/></label>
+                    <label id="dexterity-main-label" class="sub-box" for="dexterity-main"><input id="dexterity-main" type="number" class="main-ability-scores-spacing"/>Dexterity</label>
                     <label id="dexterity-mod-label"class="sub-box" for="dexterity-mod"><input id="dexterity-mod" type="number" class="sub-ability-scores-spacing"/></label>
                 </fieldset>
                 <fieldset id="constitution-field" class="constitution-class">
-                    <label id="constitution-main-label" class="sub-box" for="constitution-main">Constitution<input id="constitution-main" type="number" class="main-ability-scores-spacing"/></label>
+                    <label id="constitution-main-label" class="sub-box" for="constitution-main"><input id="constitution-main" type="number" class="main-ability-scores-spacing"/>Constitution</label>
                     <label id="constitution-mod-label"class="sub-box" for="constitution-mod"><input id="constitution-mod" type="number" class="sub-ability-scores-spacing"/></label>
                 </fieldset>
                 <fieldset id="intelligence-field" class="intelligence-class">
-                    <label id="intelligence-main-label" class="sub-box" for="intelligence-main">Intelligence<input id="intelligence-main" type="number" class="main-ability-scores-spacing"/></label>
+                    <label id="intelligence-main-label" class="sub-box" for="intelligence-main"><input id="intelligence-main" type="number" class="main-ability-scores-spacing"/>Intelligence</label>
                     <label id="intelligence-mod-label"class="sub-box" for="intelligence-mod"><input id="intelligence-mod" type="number" class="sub-ability-scores-spacing"/></label>
                 </fieldset>
                 <fieldset id="wisdom-field" class="wisdom-class">
-                    <label id="wisdom-main-label" class="sub-box" for="wisdom-main">Wisdom<input id="wisdom-main" type="number" class="main-ability-scores-spacing"/></label>
+                    <label id="wisdom-main-label" class="sub-box" for="wisdom-main"><input id="wisdom-main" type="number" class="main-ability-scores-spacing"/>Wisdom</label>
                     <label id="wisdom-mod-label"class="sub-box" for="wisdom-mod"><input id="wisdom-mod" type="number" class="sub-ability-scores-spacing"/></label>
                 </fieldset>
                 <fieldset id="charisma-field" class="charisma-class">
-                    <label id="charisma-main-label" class="sub-box" for="charisma-main">Charisma<input id="charisma-main" type="number" class="main-ability-scores-spacing"/></label>
+                    <label id="charisma-main-label" class="sub-box" for="charisma-main"><input id="charisma-main" type="number" class="main-ability-scores-spacing"/>Charisma</label>
                     <label id="charisma-mod-label"class="sub-box" for="charisma-mod"><input id="charisma-mod" type="number" class="sub-ability-scores-spacing"/></label>
                 </fieldset>
             </fieldset>
 
             <fieldset id="skills-saves-prof" class="middle organizer">
                 <fieldset id="inspiration-field" class="inspiration-class">
-                    <label id="inspiration-label" class="main-box" for="inspiration"><input id="inspiration" type="checkbox" class="inspiration-spacing"/>Inspiration</label>
+                    <input id="inspiration" type="checkbox" class="inspiration-spacing"/>
+                    <label id="inspiration-label" class="main-box" for="inspiration">Inspiration</label>
                 </fieldset>
                 <fieldset id="proficiency-field" class="proficiency-class">
-                    <label id="proficiency-label" class="main-box" for="proficiency"><input id="proficiency" type="number" class="proficiency-spacing"/>Proficiency</label>
+                    <input id="proficiency" type="number" class="proficiency-spacing"/>
+                    <label id="proficiency-label" class="main-box" for="proficiency">Proficiency</label>
                 </fieldset>
                 <fieldset id="saving_throw_box-label" class="main-box">
                     <label id="strength_saving-label" class="sub-box" for="strength_saving"><input id="strength_saving" type="checkbox" class="saving-throw-spacing"/>__Strength</label>
@@ -76,7 +78,7 @@
                     <label id="intelligence_saving-label" class="sub-box" for="intelligence_saving"><input id="intelligence_saving" type="checkbox" class="saving-throw-spacing"/>__Intelligence</label>
                     <label id="widsom_saving-label" class="sub-box" for="widsom_saving"><input id="widsom_saving" type="checkbox" class="saving-throw-spacing"/>__Widsom</label>
                     <label id="charisma_saving-label" class="sub-box" for="charisma_saving"><input id="charisma_saving" type="checkbox" class="saving-throw-spacing"/>__Charisma</label>
-                Saving Throws
+                    <label id="saving_throw-label" class="sub-box">Saving Throws</label>
                 </fieldset>
 
                 <fieldset id="skills-label" class="main-box">
@@ -98,15 +100,22 @@
                     <label id="slight_of_hand-label" class="sub-box" for="slight_of_hand"><input id="slight_of_hand" type="checkbox" class="skill-spacing"/>__Slight of Hand(Dex)</label>
                     <label id="stealth-label" class="sub-box" for="stealth"><input id="stealth" type="checkbox" class="skill-spacing"/>__Stealth(Dex)</label>
                     <label id="survival-label" class="sub-box" for="survival"><input id="survival" type="checkbox" class="skill-spacing"/>__Survival(Wis)</label>
-                Skills
+                    <label id="skill_box-label" class="sub-box">Skills</label>
                 </fieldset>
             </fieldset>
 
             <fieldset id="current_status-attacks" class="middle organizer">
-                <fieldset id="AC&initiative&speed-field" class="AC&initiative&speed-class">
-                    <label id="armor_class-label" class="sub-box" for="armor_class"><input id="armor_class" type="number" class="armor-spacing"/>Armor</label>
-                    <label id="initiative-label" class="sub-box" for="initiative"><input id="initiative" type="number" class="initiative-spacing"/>Initiative</label>
-                    <label id="speed-label" class="sub-box" for="speed"><input id="speed" type="number" class="speed-spacing"/>Speed</label>
+                <fieldset id="AC-initiative-speed">
+                    <fieldset id="AC-initiative-speed-field" class="AC-initiative-speed-class">
+                        <input id="armor_class" type="number" class="armor-spacing"/>
+                        <input id="initiative" type="number" class="initiative-spacing"/>
+                        <input id="speed" type="number" class="speed-spacing"/>
+                    </fieldset>
+                    <fieldset id="AC-initiative-speed-labels">
+                        <label id="armor_class-label" class="sub-box" for="armor_class">Armor</label>
+                        <label id="initiative-label" class="sub-box" for="initiative">Initiative</label>
+                        <label id="speed-label" class="sub-box" for="speed">Speed</label>
+                    </fieldset>
                 </fieldset>
 
                 <fieldset id="current_hp-field" class="current_hp-class">
@@ -117,25 +126,32 @@
                     <label id="temp_hp-label" class="sub-box" for="temp_hp"><input id="temp_hp" type="number" class="temp_hp-spacing"/>Temporary Hitpoints</label>
                 </fieldset>
 
-                <fieldset id="hit_dice&death_saves-field" class="hit_dice&death_saves-class">
+                <fieldset id="hit_dice-death_saves-field" class="hit_dice-death_saves-class">
                     <fieldset id="hit_dice-field" class="hit_dice-class">
-                        <label id="hit_dice-label" class="sub-box" for="hit_dice"><input id="hit_dice" type="number" class="hit_dice-spacing"/>Hit Dice</label>
+                        <fieldset id="hit_dice_maximum-field">
+                            <label id="hit_dice_maximum-label" class="sub-box" for="hit_dice_maximum">Total</label>
+                            <input id="hit_dice_maximum" type="number" class="hit_dice_maximum-spacing"/>
+                        </fieldset>
+                        <input id="hit_dice" type="number" class="hit_dice-spacing"/>
+                        <label id="hit_dice-label" class="sub-box" for="hit_dice">Hit Dice</label>
                     </fieldset>
 
                     <fieldset id="death_saves-field" class="death_saves-class">
-                        <label id="death_saves-label" class="sub-box">
-                            <label id="sucess-label" class="sub-box" for="sucess">Sucess
-                                <input id="sucess" type="button" class="death_saves-spacing"/>
-                                <input id="sucess" type="button" class="death_saves-spacing"/>
-                                <input id="sucess" type="button" class="death_saves-spacing"/>
-                            </label>
-                            <label id="failure-label" class="sub-box" for="failure">Failure
-                                <input id="failure" type="button" class="death_saves-spacing"/>
-                                <input id="failure" type="button" class="death_saves-spacing"/>
-                                <input id="failure" type="button" class="death_saves-spacing"/>
-                            </label>
-                            Death Saves
-                        </label>    
+                        <fieldset id="success-label-inputs">
+                            <label id="sucess-label" class="sub-box" for="sucess">Sucess</label>
+                            <input id="sucess" type="checkbox" class="death_saves-spacing"/>
+                            <input id="sucess" type="checkbox" class="death_saves-spacing"/>
+                            <input id="sucess" type="checkbox" class="death_saves-spacing"/>   
+                        </fieldset>
+
+                        <fieldset id="failure-label-inputs">
+                            <label id="failure-label" class="sub-box" for="failure">Failure</label>
+                            <input id="failure" type="checkbox" class="death_saves-spacing"/>
+                            <input id="failure" type="checkbox" class="death_saves-spacing"/>
+                            <input id="failure" type="checkbox" class="death_saves-spacing"/> 
+                        </fieldset>
+                        
+                        <label id="death_saves-label" class="sub-box">Death Saves</label>      
                     </fieldset>  
                 </fieldset>
 
