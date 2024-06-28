@@ -19,6 +19,9 @@ input{
 input[type=number]{
     text-align: center;
 }
+input[type=text]{
+    text-align: top;
+}
 .container{
     display: absolute;
     background-color: white;
@@ -186,15 +189,7 @@ input[type=number]{
     border-bottom: 1px solid black;
     margin-bottom: 3px;
 }
-.armor-spacing{
-    width: 30%;
-    height: 30px;
-}
-.initiative-spacing{
-    width: 30%;
-    height: 30px;
-}
-.speed-spacing{
+.AC-I-S-spacing{
     width: 30%;
     height: 30px;
 }
@@ -291,6 +286,9 @@ input[type=number]{
 
 /*Personality and Features formating*/
 #personality_and_features{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 235px;
     height: 530px;
     border-right: 1px solid black;
@@ -298,10 +296,19 @@ input[type=number]{
     border-top: 1px solid black;
 }
 
+#features-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;;
+}
 #features{
     height:250px;
+    width: 96%;
 }
-
+#features-label{
+    font-size: 20px;
+}
 /*Passive Perception and equipment and other*/
 #pp-other_proficiencies{
     display: flex;
