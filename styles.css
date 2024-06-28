@@ -16,6 +16,9 @@ input{
     margin: 0px;
     padding: 0px;
 }
+input[type=number]{
+    text-align: center;
+}
 .container{
     display: absolute;
     background-color: white;
@@ -91,7 +94,7 @@ input{
     width: 60px;
     font-size: 24px;
     text-align: center;
-    margin-left: 8px;
+    
     
 }
 .sub-ability-scores-spacing{
@@ -126,7 +129,8 @@ input{
     width: 20px;
 }
 #inspiration-label{
-    font-size: 24px;
+    font-size: 20px;
+    margin-left: 5px;
 }
 
 .proficiency-class{
@@ -139,10 +143,11 @@ input{
 }
 #proficiency{
     height: 20px;
-    width: 40px; 
+    width: 20px;
 }
 #proficiency-label{
     font-size: 20px;
+    margin-left: 5px;
 }
 
 #saving_throw_box-label{
@@ -152,11 +157,18 @@ input{
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
+#saving_throw-label{
+    margin-top: 3px;
+    text-align: center;
+}
 
 #skills-label{
     display: flex;
     flex-direction: column;
-    
+}
+#skill_box-label{
+    margin-top: 5px;
+    text-align: center;
 }
 
 /*current status formating*/
@@ -167,16 +179,114 @@ input{
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
- #current_status-attacks{
-    height: 450px;
-     width: 200px;
-}   
-#AC&initiative&speed-field{
+ 
+#AC-initiative-speed{
     display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
+    border-bottom: 1px solid black;
+    margin-bottom: 3px;
 }
-#AC&initiative&speed-field > label > input{
+.armor-spacing{
     width: 30%;
+    height: 30px;
+}
+.initiative-spacing{
+    width: 30%;
+    height: 30px;
+}
+.speed-spacing{
+    width: 30%;
+    height: 30px;
+}
+#armor_class-label{
+    padding-left: 10px;
+}
+#initiative-label{
+    padding-left: 23px;
+}
+#speed-label{
+    padding-left: 18px;
+}
+#current_hp-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    background-color: white;
+}
+#current_hp{
+    width: 95%;
+    height: 60px;
+    font-size: 32px;
+}
+
+#temp_hp-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    background-color: white;
+}
+#temp_hp{
+    width: 95%;
+    height: 60px;
+    font-size: 32px;
+}
+
+
+/* Hit dice and Death Saves formatting*/
+
+#hit_dice-death_saves-field{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#hit_dice-field{
+    display: flex;
+    flex-direction: column;
+    width: 75px;
+    border-right: 1px solid black;
+    padding: 5px;
+}
+#hit_dice_maximum-label{
+    font-size: 12px;
+}
+#hit_dice_maximum{
+    width: 55%;
+}
+#hit_dice{
+    width: 94%;
+    height: 30px;
+}
+#hit_dice-label{
+    text-align: center;
+}
+
+#death_saves-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#death_saves-label{
+    text-align: center;
+}
+
+#attacks_spellcasting-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#attacks_spellcasting-label{
+    text-align: center;
+}
+#attacks_spellcasting{
+    width: 95%;
 }
 
 /*Personality and Features formating*/
