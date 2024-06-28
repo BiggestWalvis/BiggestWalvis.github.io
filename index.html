@@ -125,11 +125,17 @@
                 </fieldset>
 
                 <fieldset id="current_hp-field" class="current_hp-class">
-                    <label id="current_hp-label" class="sub-box" for="current_hp"><input id="current_hp" type="number" class="current_hp-spacing"/>Current Hitpoint</label>
+                    <fieldset id="current_hp_maximum-field">
+                        <label id="current_hp_maximum-label" class="sub-box" for="current_hp_maximum">Max HP</label>
+                        <input id="current_hp_maximum" type="number" class="current_hp_maximum-spacing"/>
+                    </fieldset>
+                    <input id="current_hp" type="number" class="current_hp-spacing"/>
+                    <label id="current_hp-label" class="sub-box" for="current_hp">Current Hitpoint</label>
                 </fieldset>
 
                 <fieldset id="temp_hp-field" class="temp_hp-class">
-                    <label id="temp_hp-label" class="sub-box" for="temp_hp"><input id="temp_hp" type="number" class="temp_hp-spacing"/>Temporary Hitpoints</label>
+                    <input id="temp_hp" type="number" class="temp_hp-spacing"/>
+                    <label id="temp_hp-label" class="sub-box" for="temp_hp">Temporary Hitpoints</label>
                 </fieldset>
 
                 <fieldset id="hit_dice-death_saves-field" class="hit_dice-death_saves-class">
@@ -162,25 +168,26 @@
                 </fieldset>
 
                 <fieldset id="attacks_spellcasting-field" class="attacks_spellcasting-class">
-                    <label id="attacks_spellcasting-label" class="sub-box" for="attacks_spellcasting"><input id="attacks_spellcasting" type="text" class="attacks_spellcasting-spacing"/>Attacks & Spellcasting</label>
+                    <input id="attacks_spellcasting" type="text" class="attacks_spellcasting-spacing"/>
+                    <label id="attacks_spellcasting-label" class="sub-box" for="attacks_spellcasting">Attacks & Spellcasting</label>
                 </fieldset>
 
             </fieldset>
 
             <fieldset id="personality_and_features" class="middle organizer">
                 <fieldset id="personality_traits" class="main-box">
-                    <input id="personality" type="text" class="personality-trait-spacing"/>
+                    <textarea id="personality" type="text" class="personality-trait-spacing"></textarea>
                     <label id="personality-label" class="sub-box" for="personality">Personality</label>
-                    <input id="ideals" type="text" class="personality-trait-spacing"/>
+                    <textarea id="ideals" type="text" class="personality-trait-spacing"></textarea>
                     <label id="ideals-label" class="sub-box" for="ideals"></label>Ideals</label>
-                    <input id="bonds" type="text" class="personality-trait-spacing"/>
+                    <textarea id="bonds" type="text" class="personality-trait-spacing"></textarea>
                     <label id="bonds-label" class="sub-box" for="bonds"></label>Bonds</label>
-                    <input id="flaws" type="text" class="personality-trait-spacing"/>
+                    <textarea id="flaws" type="text" class="personality-trait-spacing"></textarea>
                     <label id="flaws-label" class="sub-box" for="flaws">Flaws</label>
                 </fieldset>
 
                 <fieldset id="features-field" class="main-box">
-                    <input id="features" type="text" class="features-spacing"/>
+                    <textarea id="features" class="features-spacing"></textarea>
                     <label id="features-label" class="sub-box" for="features">Features</label>
                 </fieldset>
             </fieldset>
@@ -191,7 +198,7 @@
                         <input id="passive_perception" type="number" class="PP-spacing"/>
                         <label id="passive_perception-label" class="sub-box" for="passive_perception">Passive Perception</label>
                     </fieldset>
-                    <input id="other_proficiencies" type="number" class="other_proficiencies-spacing"/>
+                    <textarea id="other_proficiencies" type="number" class="other_proficiencies-spacing"></textarea>
                     <label id="other_proficiencies-label" class="sub-box" for="other_proficiencies">Other Proficiencies</label>
                 </fieldset>
                 <fieldset id="equipment-fieldset" class="main-box">
@@ -199,7 +206,7 @@
                     <label id="equipment-label" class="sub-box" for="equipment">Equipment</label>
                 </fieldset>
                 <fieldset id="traits-fieldset" class="main-box">
-                    <input id="equipment" type="text" class="traits-spacing"/>
+                    <textarea id="traits" type="text" class="traits-spacing"></textarea>
                     <label id="traits-label" class="main-box" for="traits">Traits</label>
                 </fieldset>    
             </fieldset>
